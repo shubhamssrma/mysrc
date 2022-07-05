@@ -1,0 +1,91 @@
+:root {
+    --Primary: #fff;
+    --bgColor: tomato;
+    --boxShadow: rgba(0, 0, 0, 0.75);
+    --scrollbarColor: rgba(0, 0, 0, 0.5);
+    --scrollbarBgColor: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: var(--scrollbarBgColor);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbarColor);
+}
+
+.outer_box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bgColor);
+}
+
+.outer_box .formBox {
+    width: 400px;
+    height: 500px;
+    background-color: var(--Primary);
+    -webkit-box-shadow: 0px 0px 5px 0px var(--boxShadow);
+    -moz-box-shadow: 0px 0px 5px 0px var(--boxShadow);
+    box-shadow: 0px 0px 5px 0px var(--boxShadow);
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.outer_box .formBox label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.outer_box .formBox .field_div {
+    padding: 3px 0px;
+}
+
+.outer_box .test_btns {
+    background-color: var(--bgColor);
+    -webkit-box-shadow: 0px 0px 5px 0px var(--boxShadow);
+    -moz-box-shadow: 0px 0px 5px 0px var(--boxShadow);
+    box-shadow: 0px 0px 5px 0px var(--boxShadow);
+    color: var(--Primary);
+    width: 400px;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.outer_box .heading {
+    width: 400px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    white-space: nowrap;
+}
+
+.outer_box .test_btns span {
+    cursor: pointer;
+}
+
+.outer_box .test_btns span:first-child {
+    border-right: 1px solid var(--Primary);
+}
+
+.outer_box .test_btns span:first-child,
+.outer_box .test_btns span:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

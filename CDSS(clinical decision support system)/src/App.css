@@ -1,0 +1,17 @@
+.App{
+  /* padding-top: 20px; */
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-color:#eceff1; */
+}
+.App::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+  background-color: #eceff1;
+  filter: blur(8px);
+-webkit-filter: blur(8px);
+}
+.App::-webkit-scrollbar-thumb{
+  background: #23b8fb;
+}
