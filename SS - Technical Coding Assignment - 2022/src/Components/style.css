@@ -1,0 +1,113 @@
+.norecords , .loader{
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(150, 150, 150, 0.219);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgba(102, 100, 100, 0.219);
+}
+.main_outerdiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f8f9fb;
+}
+.main_outerdiv .product_maindiv{
+    width: 800px;
+    height: 100vh;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
+
+}
+.main_outerdiv .product_maindiv .header{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+}
+.main_outerdiv .product_maindiv .header span:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    color: #29B6F6;
+}
+
+.main_outerdiv .product_maindiv .header span:nth-child(2){
+    font-size: 16px;
+    font-weight: 600;
+}
+.main_outerdiv .product_maindiv .all_products{
+    width: 100%;
+    height: calc(100% - 8vh);
+    overflow: auto;
+}
+.main_outerdiv .product_maindiv .all_products .product{
+    width: 100%;
+    min-height: 80px;
+    cursor: pointer;
+    padding: 10px;
+}
+.main_outerdiv .product_maindiv .all_products .product:hover{
+    background-color: rgba(0,0,0,0.03);
+}
+.main_outerdiv .product_maindiv .all_products .product .title{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+.main_outerdiv .product_maindiv .all_products .product .title .imageBox{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_outerdiv .product_maindiv .all_products .product .title .imageBox img{
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+}
+.main_outerdiv .product_maindiv .all_products .product .title .rightBox{
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+}
+.main_outerdiv .product_maindiv .all_products .product .title .rightBox p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #000;
+}
+.main_outerdiv .product_maindiv .all_products .product .title .rightBox span:first-child{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,1);
+}
+
+.main_outerdiv .product_maindiv .all_products .product .title .popularity{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 16px;
+    padding: 10px;
+    color: rgba(0,0,0,0.5);
+}
+
